@@ -1,0 +1,27 @@
+{% load static %}
+{% load compress %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    {% compress css %}
+        <link type="text/css" rel="stylesheet" href="{% static 'css/app.css' %}">
+    {% endcompress %}
+
+    <title>{% block title %}URL shortener{% endblock %}</title>
+</head>
+<body class="off-canvas">
+    <header class="">
+        <h1>URL shortener</h1>
+    </header>
+
+    <div id="content" class="row">
+        {% block content %}{% endblock %}
+    </div>
+
+    <footer class="row">
+        {% block footer %}
+
+        {% endblock %}
+    </footer>
+</body>
+</html>

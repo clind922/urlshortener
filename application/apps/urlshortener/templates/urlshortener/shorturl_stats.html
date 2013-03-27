@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="large-9 columns">
+        <p>The URL key {{ object.url_key }} has been visited {{ object.visits }} time{{ object.visits|pluralize }}.</p>
+    </div>
+{% endblock %}

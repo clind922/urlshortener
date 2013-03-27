@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="large-12 columns">
+        <p><a href="http://{{ request.META.HTTP_HOST }}/{{ object.url_key.word }}">http://{{ request.META.HTTP_HOST }}/{{ object.url_key.word }}</a> leads to
+            <a href="{{ object.redirect_url }}">{{ object.redirect_url }}</a></p>
+        <p><a href="{% url 'urlshortener:short_url_redirect_stats' object.url_key.word %}">Stats for this page</a></p>
+    </div>
+{% endblock %}

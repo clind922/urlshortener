@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="large-12 columns">
+        <h1>Create new URL redirect</h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p>
+                <button class="button radius">Create</button>
+            </p>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+south
+pytz==2012g
+django_compressor
+django-debug-toolbar
+django-extensions
+django-braces
+mysql-python
+https://www.djangoproject.com/download/1.5/tarball/
